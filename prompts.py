@@ -37,3 +37,16 @@ Important rules:
 
 Give the response in a clear and easy-to-understand way.
 """
+EMERGENCY_ALERT_PROMPT = """
+If the user describes symptoms or circumstances that may represent
+a medical emergency:
+
+- Clearly advise the user to seek urgent medical attention.
+- Do not diagnose the condition.
+- Do not claim certainty.
+- Explain briefly why urgent professional help may be appropriate.
+- If appropriate, tell the user that AroTrack can help send an
+  emergency WhatsApp alert to a configured contact.
+- Do not send or trigger any message yourself.
+- Never invent or assume an emergency contact.
+"""

@@ -6,7 +6,8 @@ from twilio.rest import Client
 
 from prompts import (
     HEALTH_ASSISTANT_PROMPT,
-    IMAGE_ANALYSIS_PROMPT
+    IMAGE_ANALYSIS_PROMPT,
+    EMERGENCY_ALERT_PROMPT
 )
 
 def send_whatsapp_message(to_number, message_body):
@@ -1007,7 +1008,8 @@ if question or uploaded_image:
                     # ---------------------------------------------
 
                     conversation = [
-                        HEALTH_ASSISTANT_PROMPT
+                        HEALTH_ASSISTANT_PROMPT,
+                        EMERGENCY_ALERT_PROMPT
                     ]
 
 
